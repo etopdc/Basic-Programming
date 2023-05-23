@@ -1,0 +1,4 @@
+VAR=A
+VAR?=B
+all:
+	@echo ${VAR}s

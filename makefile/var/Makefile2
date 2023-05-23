@@ -1,0 +1,5 @@
+OBJ_A := A
+OBJ_B := ${OBJ_A} B
+OBJ_A := AA
+all:
+	@echo ${OBJ_B}

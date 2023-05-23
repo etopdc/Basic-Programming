@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "loopqueue.h": "c"
+        "loopqueue.h": "c",
+        "fcntl.h": "c"
     }
 }
