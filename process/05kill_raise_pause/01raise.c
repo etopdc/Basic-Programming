@@ -6,6 +6,10 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
+/*
+    kill(pid,SIG) 给任意进程发信号
+    raise(SIG)  给进程本身发信号
+*/
 int main(void)
 {
     pid_t pid;

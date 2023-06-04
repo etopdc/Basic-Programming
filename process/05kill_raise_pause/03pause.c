@@ -1,11 +1,13 @@
-#include <signal.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <signal.h>
 #include <sys/types.h>
 #include <unistd.h>
-#include <stdlib.h>
-#include <sys/types.h>
-#include <sys/wait.h>
 
+
+/*
+    pause() 本进程挂起暂停，等待任意信号唤醒
+*/
 int main(void)
 {
     pid_t pid;
@@ -21,7 +23,7 @@ int main(void)
         
         fprintf(stdout,"Child process <%d> start...\n",getpid());
         sleep(3);
-        kill(getppid(),SIGCHLD);
+        kill(getppid(),SIGALRM);
         fprintf(stdout,"Child process <%d> end...\n",getpid()); //没有输出这句话，SIGKILL的默认处理方式是：结束进程
         exit(EXIT_SUCCESS);
     }
