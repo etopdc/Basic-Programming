@@ -1,5 +1,5 @@
-#ifndef __SHMFIFO.H_ 
-#define __SHMFIFO.H_ 
+#ifndef __SHMFIFO_H_ 
+#define __SHMFIFO_H_ 
 
 #include "shm.h"
 #include "sem.h"
