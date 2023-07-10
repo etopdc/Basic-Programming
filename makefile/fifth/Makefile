@@ -18,5 +18,4 @@ MK_BIN:
 	mkdir -p $(BIN_DIR)
 
 clean:
-	rm -rf obj/*.o bin
-
+	rm -rf *.o server
