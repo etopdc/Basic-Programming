@@ -129,6 +129,7 @@ int main(int argc, const char *argv[])
 			perror("[ERROR] pthread_create()");
     	    exit(EXIT_FAILURE);
 		}
+		//进程由系统自动回收资源
 		pthread_detach(pid);
 	}
 	//4.关闭文件描述符
